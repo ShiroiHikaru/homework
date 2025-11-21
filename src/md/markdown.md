@@ -176,6 +176,14 @@ h1과 h2는 다음과 같이 줄 형태로도 작성할 수 있다.
 
 예시)
 `![이미지이름](이미지주소)
+
 ![이미지이름](이미지주소 '이미지설명')`
 
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQouoXuo0kg4yATM0A8NXR-8de9v2x4SoprpgXQn5xDfum5Uf-JHB5pXZKBthsMpN-iAHpL_j8Q0_KKCSVVLXYr0HEoreNBbp16uBkyDA&s=10 '산리오캐릭터즈의 멤버 쿠로미입니다.')
+
+#### 이미지에 링크를 추가하는 방법
+
+마크다운 이미지 문법 코드를 링크 문법으로 감싼다.
+
+예시)
+[![희연깃허브](/src/assets/profiles/character.jpg)](https://github.com/HeeYeonBaek/homework)
