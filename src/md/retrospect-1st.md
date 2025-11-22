@@ -137,6 +137,9 @@ git config --global user.email 'abc1111@gmail.com'
 (!이해한 대로 작성)
 branch란 나무처럼 몸통(기본 브랜치)가 있고, 가지(각자 부여한 브랜치)로 형태로 가지고 간다.
 
+branch 명을 추가할 때에는 `git branch 브랜치명`을 입력한다.
+`git branch -m 브랜치 명`은 **이름 추가가 아닌 이름 변경**의 명령어이다.
+
 즉 브랜치를 구분하는 이유는 각각의 수정사항을 분리한 후 최종적으로 정리가 되었을 때 merge 하기 위함.
 
 branch를 변경할 경우 Working Directory가 깨끗한 전제에서 branch를 변경, branch 이름을 바꾸기 전에 commit을 먼저 실행한 후에 git switch 명령어를 사용한다. 변경하기 전 status를 사용하여 상태를 확인한다.
