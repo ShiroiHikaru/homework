@@ -1,3 +1,93 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+
+.product-area {
+  inline-size: 100%;
+  block-size: var(--size);
+
+  &:nth-child(odd) {
+    .product-name {
+      color: var(--white);
+    }
+    .main-copyright {
+      color: var(--white);
+    }
+
+    .more-view {
+      background: var(--blue-100);
+      color: var(--white);
+    }
+
+    .price-view {
+      border: 1px solid var(--blue-100);
+      color: var(--blue-100);
+    }
+  }
+
+  &:nth-child(even) {
+    .product-name {
+      color: var(--black);
+    }
+
+    .main-copyright {
+      color: var(--black);
+    }
+
+    .more-view {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .price-view {
+      border: 1px solid var(--black);
+      color: var(--black);
+    }
+  }
+
+  .product-text {
+    padding-block-start: var(--extra-large-spacing);
+
+    .product-name {
+      text-align: center;
+      font-size: var(--extra-large-text);
+      font-weight: 700;
+      line-height: 1.5em;
+    }
+
+    .main-copyright {
+      padding-block: var(--small-spacing);
+      font-size: var(--medium-text);
+      text-align: center;
+      line-height: var(--line-normal);
+    }
+    .sub-copyright {
+      color: var(--gray);
+      font-size: var(--small-text);
+      text-align: center;
+    }
+    .tabBtn {
+      display: flex;
+      justify-content: center;
+      padding: var(--x-small-spacing);
+      gap: var(--base-spacing);
+      font-size: var(--xx-small-text);
+
+      a {
+        display: block;
+      }
+
+      .more-view {
+        align-content: center;
+        border-radius: 20px;
+        padding: var(--small-spacing);
+      }
+
+      .price-view {
+        align-content: center;
+        border-radius: 20px;
+        padding: 8px 20px;
+      }
+    }
+  }
+}

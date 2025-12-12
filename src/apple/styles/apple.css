@@ -1,3 +1,59 @@
-@import "./card-component.css";
+@import './card-component.css';
 
 /* 카드 레이아웃 */
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  .product-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .product-page1 {
+    background-image: url(/src/apple/products/ipad_pro_2x.jpeg);
+  }
+
+  .product-page2 {
+    background-image: url(/src/apple/products/ipad_air_2x.jpeg);
+  }
+
+  .product-page3 {
+    background-image: url(/src/apple/products/iphone15_pro_2x.jpeg);
+  }
+
+  .product-page4 {
+    background-image: url(/src/apple/products/iphone15_2x.jpeg);
+  }
+
+  .product-page5 {
+    background-image: url(/src/apple/products/apple_watch_2x.jpeg);
+  }
+
+  .product-page6 {
+    background-image: url(/src/apple/products/macbook_air_2x.jpeg);
+  }
+
+  .product-page7 {
+    background-image: url(/src/apple/products/airpods_pro_2x.jpeg);
+  }
+}
+
+@media (width >= 1024px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-page1 {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .product-container {
+    background: #121212;
+  }
+}
